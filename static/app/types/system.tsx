@@ -259,6 +259,11 @@ export interface Broadcast {
    * Image url
    */
   mediaUrl?: string;
+  /**
+   * The region the broadcast is associated with. If not set, the broadcast
+   * applies to all regions.
+   */
+  region?: string;
 }
 
 // XXX(epurkhiser): The components list can be generated using jq
